@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Properties - RealEstateHub</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+
+            <i class="bi bi-buildings"></i>
+
+            RealEstate<span>Hub</span>
+
+        </a>
+
+
+        <nav id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html"
+               class="active">
+
+                Properties
+
+            </a>
+
+            <a href="favorites.html">
+
+                Favorites
+
+                <span id="favoriteCount"
+                      class="favorite-count">
+
+                    0
+
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button id="themeToggle"
+                    class="icon-btn">
+
+                <i class="bi bi-moon"></i>
+
+            </button>
+
+
+            <a href="index.html#contact"
+               class="contact-btn">
+
+                Contact
+
+            </a>
+
+
+            <button id="menuToggle"
+                    class="menu-btn">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <p class="section-label">
+            EXPLORE
+        </p>
+
+        <h1>
+            Find Your Perfect Property
+        </h1>
+
+        <p>
+            Search from our collection of
+            properties.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FILTER SECTION -->
+
+<section class="filter-section">
+
+    <div class="container">
+
+        <div class="filters">
+
+            <div class="filter-search">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    id="propertySearch"
+                    placeholder="Search location or property..."
+                >
+
+            </div>
+
+
+            <select id="purposeFilter">
+
+                <option value="all">
+                    Buy / Rent
+                </option>
+
+                <option value="Buy">
+                    Buy
+                </option>
+
+                <option value="Rent">
+                    Rent
+                </option>
+
+            </select>
+
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    Property Type
+                </option>
+
+                <option value="Apartment">
+                    Apartment
+                </option>
+
+                <option value="Villa">
+                    Villa
+                </option>
+
+                <option value="House">
+                    House
+                </option>
+
+                <option value="Office">
+                    Office
+                </option>
+
+            </select>
+
+
+            <select id="priceFilter">
+
+                <option value="all">
+                    Price Range
+                </option>
+
+                <option value="0-5000000">
+                    Under ₹50 Lakh
+                </option>
+
+                <option value="5000000-10000000">
+                    ₹50 Lakh - ₹1 Cr
+                </option>
+
+                <option value="10000000-20000000">
+                    ₹1 Cr - ₹2 Cr
+                </option>
+
+                <option value="20000000-999999999">
+                    Above ₹2 Cr
+                </option>
+
+            </select>
+
+
+            <select id="sortFilter">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROPERTIES -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="results-header">
+
+            <h2>
+
+                Available Properties
+
+            </h2>
+
+            <span id="propertyResultCount">
+                0 Properties
+            </span>
+
+        </div>
+
+
+        <div id="allProperties"
+             class="property-grid">
+
+        </div>
+
+
+        <div id="noProperties"
+             class="no-properties">
+
+            <i class="bi bi-house-x"></i>
+
+            <h3>
+                No properties found
+            </h3>
+
+            <p>
+                Try changing your search filters.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html"
+               class="logo footer-logo">
+
+                <i class="bi bi-buildings"></i>
+
+                RealEstate<span>Hub</span>
+
+            </a>
+
+            <p>
+                Find your dream home with
+                RealEstateHub.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="favorites.html">
+                Favorites
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Property</h4>
+
+            <a href="properties.html">
+                Apartments
+            </a>
+
+            <a href="properties.html">
+                Villas
+            </a>
+
+            <a href="properties.html">
+                Houses
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                Ahmedabad, Gujarat
+            </p>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 RealEstateHub.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<div id="toast"
+     class="toast">
+
+    Property added to favorites ❤️
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

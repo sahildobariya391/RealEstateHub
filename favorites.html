@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites - RealEstateHub</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <i class="bi bi-buildings"></i>
+
+            RealEstate<span>Hub</span>
+
+        </a>
+
+
+        <nav id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="favorites.html"
+               class="active">
+
+                Favorites
+
+                <span id="favoriteCount"
+                      class="favorite-count">
+
+                    0
+
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button id="themeToggle"
+                    class="icon-btn">
+
+                <i class="bi bi-moon"></i>
+
+            </button>
+
+            <button id="menuToggle"
+                    class="menu-btn">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="page-header">
+
+    <div class="container">
+
+        <p class="section-label">
+            SAVED PROPERTIES
+        </p>
+
+        <h1>
+            My Favorites
+        </h1>
+
+        <p>
+            Properties you have saved.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div id="favoriteProperties"
+             class="property-grid">
+
+        </div>
+
+
+        <div id="emptyFavorites"
+             class="empty-state">
+
+            <i class="bi bi-heart"></i>
+
+            <h2>
+                No Favorite Properties
+            </h2>
+
+            <p>
+                Save properties you like and
+                find them here.
+            </p>
+
+            <a href="properties.html"
+               class="primary-btn">
+
+                Browse Properties
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 RealEstateHub.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<div id="toast"
+     class="toast">
+
+    Removed from favorites
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
